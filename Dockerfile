@@ -11,5 +11,5 @@ COPY app /app
 # RUN pip install <your_dependency>
 
 # Define the command to execute your Python file (app.py)
-CMD ["python", "app.py"]
-
+ENTRYPOINT ["python", "app.py"]
+EXPOSE 6000

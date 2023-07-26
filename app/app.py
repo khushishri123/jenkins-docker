@@ -1,1 +1,5 @@
-print("Hello Khushi, welcome to Google")
+ok = True
+while(ok):
+    print("Hello Khushi, welcome to Google")
+    
+
