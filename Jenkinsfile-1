@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker { 
             tcp://0.0.0.0:8080
-            image 'jenkins-docker-image:v1.1' 
+            image 'my-jenkins-image' 
             }
     }
     stages {
