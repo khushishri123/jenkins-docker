@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker { 
-            tcp://0.0.0.0:8080
+            tcp://0.0.0.0:8081
             image 'my-jenkins-image' 
             }
     }
