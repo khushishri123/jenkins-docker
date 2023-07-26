@@ -1,6 +1,9 @@
 pipeline {
   agent {
-    docker { image 'node:latest' }
+    docker { 
+        image 'node:latest' 
+        tcp://127.0.0.1:8081
+        }
   }
   stages {
     stage('Test') {
