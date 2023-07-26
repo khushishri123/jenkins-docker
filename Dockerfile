@@ -5,7 +5,7 @@ FROM python:latest
 WORKDIR /app
 
 # Copy the app directory with app.py into the container's working directory
-COPY ./jenkins-docker/app /app
+COPY app /app
 
 # Install any dependencies required by your app.py (if needed)
 # RUN pip install <your_dependency>
