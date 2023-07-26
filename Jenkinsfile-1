@@ -3,9 +3,6 @@ pipeline {
         docker {
             image 'node:latest'
             args '-v /var/run/docker.sock:/var/run/docker.sock' // Mount the Docker socket
-            environment {
-                DOCKER_HOST = 'unix:///var/run/docker.sock'
-            }
         }
     }
     stages {
