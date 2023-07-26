@@ -1,16 +1,12 @@
 pipeline {
-    agent {
-        docker { 
-            tcp://0.0.0.0:5000
-            image 'jenkins-docker-image:latest' 
-            }
+  agent {
+    docker { image 'node:latest' }
+  }
+  stages {
+    stage('Test') {
+      steps {
+        sh 'node --version'
+      }
     }
-    stages {
-        stage('Test') {
-            steps {
-                sh 'docker --version'
-            }
-        }
-    }
+  }
 }
-
