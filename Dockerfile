@@ -1,14 +1,15 @@
-# Use the official Python image as the base image
-FROM python:3.11.3
+# Use a base image with Python installed
+FROM python:latest
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy your Python application files to the working directory
-COPY . .
+# Copy the app directory with app.py into the container's working directory
+COPY ./jenkins-docker/app /app
 
-# Optionally, install any additional dependencies using pip
-# RUN pip install <package-name>
+# Install any dependencies required by your app.py (if needed)
+# RUN pip install <your_dependency>
 
-# Set the command to run your Python application
+# Define the command to execute your Python file (app.py)
 CMD ["python", "app.py"]
+
