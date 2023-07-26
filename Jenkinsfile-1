@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker { 
-            tcp://172.18.0.3:8080
+            tcp://0.0.0.0:8080
             image 'myjenkins-blueocean:2.401.2-1' 
             }
     }
