@@ -12,4 +12,4 @@ COPY app /app
 
 # Define the command to execute your Python file (app.py)
 ENTRYPOINT ["python", "app.py"]
-EXPOSE 6000
+#EXPOSE 6000
