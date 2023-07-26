@@ -10,7 +10,6 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd app
-                pip install -r requirements.txt
                 '''
             }
         }
