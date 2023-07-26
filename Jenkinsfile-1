@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker { 
             tcp://0.0.0.0:5000
-            image 'myjenkins-blueocean:2.401.2-1' 
+            image 'jenkins-docker-image:latest' 
             }
     }
     stages {
