@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'docker-alpine-python'
+            label 'docker-agent-python'
             }
       }
     stages {
